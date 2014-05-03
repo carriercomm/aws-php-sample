@@ -28,7 +28,15 @@ use Aws\S3\S3Client;
  For more information about this interface to Amazon S3, see:
  http://docs.aws.amazon.com/aws-sdk-php-2/guide/latest/service-s3.html#creating-a-client
 */
+ 
 $client = S3Client::factory();
+
+//or
+// $client = S3Client::factory(array(
+//     'key' => 'YOU-AMAZON-AWS-KEY',
+//     'secret' => 'YOU-AMAZON-SECRET',
+//   ));
+
 
 /*
  Everything uploaded to Amazon S3 must belong to a bucket. These buckets are
